@@ -1,0 +1,51 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:id="@+id/total"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/thumbNail_kill"
+        android:layout_alignParentStart="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/name_kill"
+        android:text=""
+        android:layout_toEndOf="@+id/thumbNail_kill"
+        android:layout_marginStart="12dp"
+        android:textColor="@color/pureWhite"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/dateText_kill"
+        android:text=""
+        android:layout_below="@+id/name_kill"
+        android:layout_marginStart="13dp"
+        android:textColor="@color/single_row_date_text_color"
+        android:textStyle="italic"
+        android:textSize="11sp"
+        android:layout_toEndOf="@+id/thumbNail_kill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="SmallSp" />
+
+    <ImageView
+        android:id="@+id/logo_kill"
+        android:src="@drawable/logokill"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@id/thumbNail_kill"
+        android:layout_alignParentEnd="true"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

@@ -1,0 +1,209 @@
+<resources>
+    <string name="app_name">Nexmii</string>
+
+    <string name="count_down">Countdown</string>
+    <string name="new_year">2021</string>
+    <string name="days">days</string>
+    <string name="hours">hours</string>
+    <string name="minutes">minutes</string>
+    <string name="seconds">seconds</string>
+    <string name="copy">copy to clipboard</string>
+    <string name="copied">Copied to clipboard</string>
+
+    <string name="chest_room">Chest Room</string>
+    <string name="quote_page_title">Quote</string>
+    <string name="my_new_alarm">My new alarm</string>
+
+    <string name="tab_text_1">Resolutions</string>
+    <string name="tab_text_2">Quotes</string>
+    <string name="tab_text_3">2021</string>
+
+    <string name="res_tab_text_1">Ongoing</string>
+    <string name="res_tab_text_2">Achieved</string>
+    <string name="res_tab_text_3">Killed</string>
+
+    <string name="three_dots">. . .</string>
+    <string name="loading">loading</string>
+    <string name="zeros">0</string>
+
+    <!--SHARE OPTIONS-->
+    <string name="share_main">share</string>
+    <string name="share_fb">Facebook</string>
+    <string name="other_apps">Other apps</string>
+    <string name="start_making">Start making the best of 2020 by keeping track of your goals!</string>
+    <string name="share_app_with">Share app with</string>
+    <string name="share_reso_with">Share resolution with</string>
+    <string name="share_quote_with">Share quote with</string>
+    <!--/////////////-->
+
+    <!--SHARED PREFERENCES-->
+    <string name="one_time_four_quotes_key">fourQuotes</string>
+    <string name="one_time_four_quotes_value">saved</string>
+    <!--//////////////////-->
+
+    <!--/////////////////ADS/////////////////-->
+    <!--/////DEVELOPER ENVIRONMENT/////-->
+    <string name="ads_app_id_dev">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="ads_banner_general_dev">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ads_rewarded_video_dev">ca-app-pub-3940256099942544/5224354917</string>
+    <!--///////////////////////////////-->
+
+    <!--/////PRODUCTION ENVIRONMENT/////-->
+    <string name="ads_app_id_prod">ca-app-pub-3889185031106667~4418538654</string>
+    <string name="ads_banner_list_prod">ca-app-pub-3889185031106667/2321901650</string>
+    <string name="ads_banner_edit_prod">ca-app-pub-3889185031106667/3686954211</string>
+    <string name="ads_banner_dets_prod">ca-app-pub-3889185031106667/6824446960</string>
+    <string name="ads_banner_quote_add_prod">ca-app-pub-3889185031106667/6341037718</string>
+    <string name="ads_banner_quote_dets_prod">ca-app-pub-3889185031106667/6995643837</string>
+    <string name="ads_rewarded_2nd_quote_prod">ca-app-pub-3889185031106667/2693630260</string>
+    <!--////////////////////////////////-->
+
+    <!--/////CURRENT ENVIRONMENT/////-->
+    <string name="ads_app_id_actual">ca-app-pub-3889185031106667~4418538654</string>
+    <string name="ads_banner_list_actual">ca-app-pub-3889185031106667/2321901650</string>
+    <string name="ads_banner_edit_actual">ca-app-pub-3889185031106667/3686954211</string>
+    <string name="ads_banner_dets_actual">ca-app-pub-3889185031106667/6824446960</string>
+    <string name="ads_banner_quot_actual">ca-app-pub-3889185031106667/6341037718</string>
+    <string name="ads_banner_qdet_actual">ca-app-pub-3889185031106667/6995643837</string>
+    <string name="ads_rewarded_video_actual">ca-app-pub-3889185031106667/2693630260</string>
+    <!--////////////////////////////-->
+    <!--/////////////////////////////////////-->
+
+    <!--//////////STORE//////////-->
+    <string name="vip_equipped">You are now VIP.</string>
+    <!--/////////////////////////-->
+
+    <!--MORE MENU-->
+    <string name="rate_us">Rate us</string>
+    <!--/////////-->
+
+    <!--Notifications-->
+    <string name="noti_new_quotes">New Quotes</string>
+    <string name="noti_your_quote_chest">Your daily quote chests are ready to be opened again!</string>
+    <!--/////////////-->
+
+    <string name="quote">"</string>
+    <string name="created">created:</string>
+    <string name="dialog_title">Are you sure?</string>
+    <string name="dialog_message">Exterminate your Resolution?</string>
+    <string name="no">NO</string>
+    <string name="yes">YES</string>
+    <string name="work">Get to work</string>
+    <string name="dTitle">No Text Found</string>
+    <string name="dMessage">Please input Title and Text in order to save your resolution</string>
+    <string name="cancel">OK</string>
+    <string name="resolutionAchieved">Resolution Achieved</string>
+    <string name="didYouFinish">Did you complete this goal?</string>
+    <string name="myNewYearsRes">My New Year\'s Resolutions</string>
+    <string name="enterTitle">What\'s your new resolution?</string>
+    <string name="writeResolution">What would you like to change or accomplish?</string>
+    <string name="chooseYourEmoji">Choose your emoji</string>
+    <string name="letsDoIt">Let\'s do it</string>
+    <string name="ican">I Can Do It</string>
+    <string name="killRes">Kill Resolution</string>
+    <string name="killForever">Kill Forever</string>
+    <string name="toResList">My Resolution\'s List</string>
+    <string name="resCompleted">Resolution Achieved</string>
+    <string name="addANrewRes">Add a new resolution</string>
+    <string name="noWishy">You have no ongoing resolutions</string>
+    <string name="noAchy">You have no achieved resolutions</string>
+    <string name="noKilly">You have no killed resolutions</string>
+    <string name="addPicture">Add Picture</string>
+    <string name="goback">&lt;</string>
+    <string name="plus">+</string>
+    <string name="edit">Edit</string>
+    <string name="share">Share</string>
+    <string name="the_wish_will">\'\'The wish will go here\'\'</string>
+    <string name="the_quote_will">\'\'The quote will go here\'\'</string>
+    <string name="the_date">The date</string>
+    <string name="title_goes_here">Title goes here</string>
+    <string name="second_menu">menu</string>
+    <string name="choose_a_chest">get your daily motivational quote</string>
+    <string name="choose_2nd_chest_regular">Watch a short video, earn another quote</string>
+    <string name="choose_2nd_chest_premium">Open another chest and get an additional daily quote!</string>
+    <string name="choose_2nd_chest_regular_after_vid">Here\'s another daily quote. Come back tomorrow!</string>
+    <string name="quote_category_life">Life</string>
+    <string name="quote_category_success">Success</string>
+    <string name="quote_category_happiness">Happiness</string>
+    <string name="done">DONE</string>
+    <string name="you_have_already_opened">You already opened two chests. Come back tomorrow!</string>
+    <string name="you_have_opened_all">You opened your 10 chests already. Come back tomorrow!</string>
+    <string name="you_have_already_opened_your">You\'ve already opened your 10 daily quote chests</string>
+    <string name="you_have">You have</string>
+    <string name="chests_left_to_open">chests left to open</string>
+    <string name="come_back_tomorrow">Come back tomorrow!</string>
+    <string name="quote_for_life">Quote for life</string>
+    <string name="quote_for_success">Quote for success</string>
+    <string name="quote_for_happiness">Quote for happiness</string>
+    <string name="set_alarm">Set</string>
+    <string name="vibration">Vibration</string>
+    <string name="repetition">Repetition</string>
+    <string name="choose_time">Choose time</string>
+    <string name="dummy_time">00:00 AM</string>
+    <string name="ring_once">Ring once</string>
+    <string name="monday_to_friday">Monday to Friday</string>
+    <string name="every_day">Every day</string>
+    <string name="custom">Custom</string>
+    <string name="revive_resolution">Revive resolution?</string>
+    <string name="you_can_only_revive_once">You can only revive a resolution once.</string>
+    <string name="from_now_on_you_only">From now on you only live once!</string>
+    <string name="you_already">You already killed twice your resolution. You cannot revive it again.</string>
+    <string name="killed_twice">killed twice</string>
+
+    <!--TUTORIAL-SLIDER-->
+    <string name="tut_title_silder_1">Motivation</string>
+    <string name="tut_title_silder_2">Resolutions</string>
+    <string name="tut_title_silder_3">Mystery Box</string>
+    <string name="tut_title_silder_4">Daily Quotes</string>
+
+    <string name="tut_text_silder_1">Boost your motivation by adding all the new year\'s resolutions you can think of</string>
+    <string name="tut_text_silder_2">Write them, achieve them, or simply kill them! And don\'t forget to share with the world</string>
+    <string name="tut_text_silder_3">Stay focused and inspired by unlocking daily motivational quotes. Gotta catch \'em all!</string>
+    <string name="tut_text_silder_4">Collect your quotes and share them with everyone. Spread the love!</string>
+
+    <string name="tut_btn_previous">back</string>
+    <string name="tut_btn_next">next</string>
+    <string name="tut_btn_finish">let\'s start</string>
+    <!--///////////////-->
+
+    <!--EMOJIES-->
+    <string name="emojies_blue_png">blue.png</string>
+    <!--///////-->
+
+    <!--RESOLUTION DETAILS-->
+    <string name="res_details_achieved">achieved</string>
+    <string name="res_details_killed">kill</string>
+    <string name="res_details_revive">revive</string>
+
+    <!--STORE-->
+    <string name="store_vip">V.I.P</string>
+    <string name="store_you_get">What you get</string>
+    <string name="store_you_price">One-Time Purchase - $5.99</string>
+    <!--/////-->
+
+    <!--RESOLUTION STATUS MESSAGE-->
+    <string name="res_status_good_luck">good luck</string>
+    <string name="res_status_congratulations">Congratulations!</string>
+    <string name="res_status_you_made_it_happen">You made it happen!</string>
+    <string name="res_status_dont_giveup_next_time">Don\'t give up next time</string>
+
+    <!--REVIVE RESOLUTIONS-->
+    <string name="revive_res_modal_title">Revive resolution?</string>
+    <string name="revive_res_modal_message">You can only do this once</string>
+    <string name="revive_res_modal_yes">yes</string>
+    <string name="revive_res_modal_no">no</string>
+
+    <!--Facebook Strings-->
+    <string name="facebook_app_id">943432972480202</string>
+    <string name="fb_login_protocol_scheme">fb943432972480202</string>
+    <string name="resolutions">resolutions</string>
+    <string name="quotes">quotes</string>
+    <string name="fab_add_res">fab add res</string>
+    <string name="fab_add_quote">fab add quote</string>
+    <string name="vip_items">VIP items</string>
+    <string name="exit">exit</string>
+    <string name="locked_chest">locked chest</string>
+    <string name="lock">lock</string>
+    <string name="become_vip_text">become vip text</string>
+
+</resources>

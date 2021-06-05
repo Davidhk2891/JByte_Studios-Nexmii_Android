@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "336316726851",
+    "firebase_url": "https://nexmii-my-ny-resolutions-app.firebaseio.com",
+    "project_id": "nexmii-my-ny-resolutions-app",
+    "storage_bucket": "nexmii-my-ny-resolutions-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336316726851:android:ee83e07ffa70de7ca2def6",
+        "android_client_info": {
+          "package_name": "mywishlist.nexmii.com.mywishlist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336316726851-7g9vsblgi1jtgsos784f2khhgr77810l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mywishlist.nexmii.com.mywishlist",
+            "certificate_hash": "fffe1aeed6be4a17c8bb8077df681381b7a12bb7"
+          }
+        },
+        {
+          "client_id": "336316726851-ajpv11eimvjdemsii7eonh9e7n9tpa7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsPCt7Vb2lvxYJKhXAs_TI57x_-RAa_cw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336316726851-ajpv11eimvjdemsii7eonh9e7n9tpa7n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-3889185031106667~4418538654"
+    }
+  ],
+  "configuration_version": "1"
+}

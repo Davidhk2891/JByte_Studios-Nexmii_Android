@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_bg_gradient"
+    tools:context="mynyresolutionslist.nexmii.com.mynyresolutionslist.ui.activities.QuoteDetailActivity">
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:clickable="true"
+        android:focusable="true"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="10dp"
+        card_view:cardMaxElevation="12dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <!--SET UP GRADIENT BACKGROUND FOR CARD VIEW-->
+
+        <RelativeLayout
+            android:id="@+id/detailed_quote_contents_relative"
+            android:background="@drawable/detailed_quote_bg_gradient"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/detailed_quote_pic"
+                android:src="@drawable/bigquote"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                tools:ignore="ContentDescription" />
+
+            <ScrollView
+                android:id="@+id/detailed_quote_scroll_view_main_text"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/detailed_quote_pic"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:scrollbars="none"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/detailed_quote_text"
+                    android:text="@string/the_quote_will"
+                    android:textSize="25sp"
+                    android:textColor="@color/pureWhite"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/detailed_quote_category"
+                android:text="@string/quote_for_life"
+                android:textSize="21sp"
+                android:layout_alignStart="@+id/detailed_quote_scroll_view_main_text"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/pureWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:id="@+id/detailed_quote_heart_container"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/heart_container_bg"
+        android:foreground="?actionBarItemBackground"
+        android:layout_alignBottom="@+id/cardView"
+        android:layout_alignEnd="@+id/cardView"
+        android:clipChildren="false"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="-30dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/detailed_quote_heart_animation"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center"
+            app:lottie_rawRes="@raw/heartanimation"/>
+
+    </FrameLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="FULL_WIDTHx50"
+        ads:adUnitId="@string/ads_banner_qdet_actual">
+    </com.google.android.gms.ads.AdView>
+
+    <com.facebook.share.widget.ShareButton
+        android:id="@+id/share_linky_quote"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</RelativeLayout>

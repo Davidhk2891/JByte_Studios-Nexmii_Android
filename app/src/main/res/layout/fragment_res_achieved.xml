@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context="mynyresolutionslist.nexmii.com.mynyresolutionslist.ui.fragments.subfragments.ResAchievedFragment">
+
+    <RelativeLayout
+        android:id="@+id/yes_ach_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/yes_ach_bg_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/noach" />
+
+        <FrameLayout
+            android:id="@+id/yes_ach_overlay"
+            android:background="@drawable/main_bg_gradient_overlayed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/no_ach_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/no_ach_image"
+            android:src="@drawable/noach"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+
+        <TextView
+            android:id="@+id/no_ach_text"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/noAchy"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/no_ach_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/addANrewRes"
+            android:paddingStart="18dp"
+            android:background="@drawable/btn_bg_yellow"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:textColor="@color/nexmii_font_blue"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:elevation="15dp"
+            android:paddingEnd="18dp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container_list_ach"
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/list_achievements"
+            android:divider="#39ffffff"
+            android:dividerHeight="1dp"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+</RelativeLayout>

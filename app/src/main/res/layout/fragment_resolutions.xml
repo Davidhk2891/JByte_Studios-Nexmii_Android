@@ -1,0 +1,149 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_gradient"
+    tools:context="mynyresolutionslist.nexmii.com.mynyresolutionslist.ui.fragments.ResolutionsFragment">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <LinearLayout
+        android:id="@+id/btn_tabs_linear"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/res_resolutions_relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_weight="1"
+            android:elevation="10dp"
+            android:background="@drawable/tabs_bg_yellow">
+
+            <TextView
+                android:id="@+id/res_resolutions_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/nexmii_font_blue"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:textAllCaps="true"
+                android:text="@string/res_tab_text_1"/>
+
+            <TextView
+                android:id="@+id/res_resolutions_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginBottom="2dp"
+                android:padding="2dp"
+                android:layout_toEndOf="@+id/res_resolutions_title"
+                android:textStyle="bold"
+                android:textColor="@color/nexmii_font_blue"
+                android:textSize="22sp"
+                android:textAllCaps="true"
+                android:text="@string/zeros"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/res_achieved_relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_weight="1"
+            android:elevation="10dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/tabs_bg_green">
+
+            <TextView
+                android:id="@+id/res_achieved_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/nexmii_font_blue"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:textAllCaps="true"
+                android:text="@string/res_tab_text_2"/>
+
+            <TextView
+                android:id="@+id/res_achieved_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginBottom="2dp"
+                android:padding="2dp"
+                android:layout_toEndOf="@+id/res_achieved_title"
+                android:textStyle="bold"
+                android:textColor="@color/nexmii_font_blue"
+                android:textSize="22sp"
+                android:textAllCaps="true"
+                android:text="@string/zeros"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/res_killed_relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:elevation="10dp"
+            android:background="@drawable/tabs_bg_red">
+
+            <TextView
+                android:id="@+id/res_killed_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/nexmii_font_blue"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:textAllCaps="true"
+                android:text="@string/res_tab_text_3"/>
+
+            <TextView
+                android:id="@+id/res_killed_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginBottom="2dp"
+                android:padding="2dp"
+                android:layout_toEndOf="@+id/res_killed_title"
+                android:textStyle="bold"
+                android:textColor="@color/nexmii_font_blue"
+                android:textSize="22sp"
+                android:textAllCaps="true"
+                android:text="@string/zeros"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <eightbitlab.com.blurview.BlurView
+        android:id="@+id/resBlurView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <!--Any child View here, TabLayout for example-->
+
+    </eightbitlab.com.blurview.BlurView>
+
+</RelativeLayout>

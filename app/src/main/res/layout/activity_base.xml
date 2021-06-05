@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mynyresolutionslist.nexmii.com.mynyresolutionslist.ui.activities.BaseActivity">
+
+    <RelativeLayout
+        android:id="@+id/linear_toolbar_and_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:background="@drawable/top_panel_bg_gradient">
+
+        <!--Toolbar-->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <!--Navigation-->
+        <LinearLayout
+            android:id="@+id/top_navigation_bar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@+id/toolbar"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:background="@android:color/transparent">
+
+            <ImageButton
+                android:id="@+id/emoji_res_sel"
+                android:src="@drawable/emojires"
+                android:background="#00000000"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/resolutions" />
+
+            <ImageButton
+                android:id="@+id/emoji_quote_sel"
+                android:src="@drawable/emojiquotes"
+                android:background="#00000000"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/quotes" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/main_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear_toolbar_and_nav"
+        android:layout_above="@+id/adView"/>
+
+    <com.facebook.share.widget.ShareButton
+        android:id="@+id/share_linky_base"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/adView"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin_bottom"
+        android:backgroundTint="@color/nexmii_yellow"
+        app:srcCompat="@drawable/ic_add_black_30dp"
+        tools:ignore="VectorDrawableCompat"
+        android:contentDescription="@string/fab_add_res" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin_bottom"
+        android:backgroundTint="@color/lightGrey"
+        android:background="@color/lightGrey"
+        app:srcCompat="@drawable/chest"
+        tools:ignore="VectorDrawableCompat"
+        android:contentDescription="@string/fab_add_quote"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="FULL_WIDTHx50"
+        ads:adUnitId="@string/ads_banner_list_actual">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

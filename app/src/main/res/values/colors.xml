@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#424242</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FFE17D</color>
+    <color name="pureWhite">#ffffff</color>
+    <color name="solidRed">#F60000</color>
+    <color name="customerGreen">#76FF03</color>
+    <color name="lightGrey">#BDBDBD</color>
+
+    <!--New design colors-->
+    <color name="nexmii_yellow">#FFE17D</color>
+    <color name="nexmii_yellow_opac">#CCFFE17D</color>
+
+    <color name="nexmii_green">#BEE86E</color>
+    <color name="nexmii_green_opac">#CCBEE86E</color>
+
+    <color name="nexmii_red">#FF5364</color>
+    <color name="nexmii_red_opac">#CCFF5364</color>
+
+    <color name="nexmii_font_blue">#18395E</color>
+    <color name="toolbar_blue2">#0F3541</color>
+
+    <!--Main bg colors-->
+    <color name="main_bg_grad_first_color">#0E2A3B</color>
+    <color name="main_bg_grad_second_color">#244A89</color>
+    <color name="main_bg_grad_third_color">#284F95</color>
+
+    <!--overlay: CC-->
+    <color name="main_bg_grad_first_color_ol">#CC0E2A3B</color>
+    <color name="main_bg_grad_second_color_ol">#CC244A89</color>
+    <color name="main_bg_grad_third_color_ol">#CC284F95</color>
+    <!--//////////////-->
+
+    <!--Top panel bg colors-->
+    <color name="top_panel_grad_first_color">#18395E</color>
+    <color name="top_panel_grad_second_color">#0F3541</color>
+    <!--///////////////////-->
+
+    <!--List rows colors-->
+    <color name="single_row_background_color">#153855</color>
+    <color name="single_row_date_text_color">#9C969E</color>
+    <!--////////////////-->
+
+    <!--Res detail Activity colors-->
+    <color name="bg_blue">#163856</color>
+    <color name="bg_blue_transparent">#4D163856</color>
+    <!--//////////////////////////-->
+
+    <!--Quotes-->
+    <color name="quote_bg_color">#163856</color>
+    <color name="quote_bg_color_red">#FF5364</color>
+    <color name="quote_detalied_bg_gradient_1">#0599E6</color>
+    <color name="quote_detalied_bg_gradient_2">#021B79</color>
+    <!--//////-->
+
+    <!--Store-->
+    <color name="store_bg_color">#2C406F</color>
+    <!--/////-->
+</resources>

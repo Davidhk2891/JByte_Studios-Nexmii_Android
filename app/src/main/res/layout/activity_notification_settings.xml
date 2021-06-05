@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mynyresolutionslist.nexmii.com.mynyresolutionslist.ui.activities.NotificationSettingsActivity">
+
+    <TextView
+        android:id="@+id/notification_title"
+        android:text="lorem ipsum"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/notification_body"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/notification_title"
+        android:layout_marginTop="50dp"
+        android:text="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum "
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/choose_time"
+        android:layout_alignBottom="@+id/choosen_time"
+        android:layout_alignParentEnd="true"
+        android:text="@string/choose_time"
+        android:layout_marginEnd="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/repetition_action"
+        android:text="@string/ring_once"
+        android:textSize="18sp"
+        android:layout_alignBottom="@+id/repetition_title"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Switch
+        android:id="@+id/vibration_action_switch"
+        android:layout_alignBottom="@+id/vibration_title"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/choosen_time"
+        android:text="@string/dummy_time"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="10dp"
+        android:textSize="26sp"
+        android:layout_above="@+id/separator_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/separator_two"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/repetition_title"
+        android:layout_marginBottom="20dp"
+        android:background="@color/lightGrey"/>
+
+    <TextView
+        android:id="@+id/repetition_title"
+        android:text="@string/repetition"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:layout_above="@+id/separator_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/separator_one"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/vibration_title"
+        android:layout_marginBottom="20dp"
+        android:background="@color/lightGrey"/>
+
+    <TextView
+        android:id="@+id/vibration_title"
+        android:text="@string/vibration"
+        android:layout_above="@+id/btn_set_alarm"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_set_alarm"
+        android:background="@drawable/general_blue_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/set_alarm"
+        android:textColor="@color/pureWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

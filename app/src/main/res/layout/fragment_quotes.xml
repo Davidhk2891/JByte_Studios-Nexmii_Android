@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_gradient"
+    tools:context="mynyresolutionslist.nexmii.com.mynyresolutionslist.ui.fragments.QuotesFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/quotes_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_gravity="center"/>
+
+    <!--blur effect-->
+    <eightbitlab.com.blurview.BlurView
+        android:id="@+id/quotes_blurView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <!--Any child View here, TabLayout for example-->
+
+    </eightbitlab.com.blurview.BlurView>
+
+</FrameLayout>

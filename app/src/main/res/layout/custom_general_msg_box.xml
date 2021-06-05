@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/general_msg_box_relative"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/res_detail_title_bg">
+
+        <TextView
+            android:id="@+id/general_msg_box_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/nexmii_green"
+            android:layout_marginEnd="15dp"
+            android:textSize="20sp"
+            android:text="@string/resolutionAchieved"/>
+
+        <TextView
+            android:id="@+id/general_msg_box_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/pureWhite"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/general_msg_box_title"
+            android:text="@string/didYouFinish"/>
+
+        <LinearLayout
+            android:id="@+id/general_msg_box_btns_linear"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/general_msg_box_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/general_msg_box_btns_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:textStyle="bold"
+                android:textColor="@color/nexmii_red"
+                android:textSize="16sp"
+                android:text="@string/no"/>
+
+            <TextView
+                android:id="@+id/general_msg_box_btns_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:padding="4dp"
+                android:textColor="@color/nexmii_green"
+                android:layout_marginStart="18dp"
+                android:textSize="16sp"
+                android:text="@string/yes"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/locked_chest_dialog_exit"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/yellowexit"
+        tools:targetApi="m"
+        android:contentDescription="@string/exit" />
+
+    <ImageView
+        android:id="@+id/locked_chest_dialog_chest"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/locked_chest_dialog_exit"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/tutemojithree"
+        android:contentDescription="@string/locked_chest" />
+
+    <ImageView
+        android:id="@+id/locked_chest_dialog_lock"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/locked_chest_dialog_chest"
+        android:layout_toEndOf="@+id/locked_chest_dialog_chest"
+        android:src="@drawable/lock"
+        android:contentDescription="@string/lock" />
+
+    <TextView
+        android:id="@+id/locked_chest_dialog_text_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/you_have_already_opened"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/pureWhite"
+        android:layout_below="@+id/locked_chest_dialog_chest"
+        android:layout_marginTop="20dp"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:id="@+id/locked_chest_dialog_text_premium_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/come_back_tomorrow"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@color/pureWhite"
+        android:layout_below="@+id/locked_chest_dialog_text_one"
+        android:layout_marginTop="25dp"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"/>
+
+    <ImageView
+        android:id="@+id/locked_chest_dialog_become_vip_btn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/locked_chest_dialog_text_one"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/becomevipbtn"
+        android:contentDescription="@string/become_vip_text" />
+
+</RelativeLayout>

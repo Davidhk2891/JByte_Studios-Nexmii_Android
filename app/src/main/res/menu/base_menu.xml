@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.activities.BaseActivityActivity">
+    <item
+        android:id="@+id/action_menu"
+        android:orderInCategory="202"
+        android:title="@string/second_menu"
+        android:icon="@drawable/ic_more_vert_white_24dp"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_premium"
+        android:orderInCategory="201"
+        android:title="@string/edit"
+        android:icon="@drawable/vipdiamond"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_share_app"
+        android:orderInCategory="200"
+        android:title="@string/share_main"
+        android:icon="@drawable/ic_share_nexmii_yellow_24dp"
+        app:showAsAction="ifRoom" />
+
+</menu>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_bg_gradient"
+    tools:context="mynyresolutionslist.nexmii.com.mynyresolutionslist.ui.activities.QuotesAdditionActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/prev_card_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <RelativeLayout
+            android:id="@+id/detailed_quote_contents_relative"
+            android:background="@drawable/detailed_quote_bg_gradient"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/prev_quote_pic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bigquote" />
+
+            <ScrollView
+                android:id="@+id/detailed_quote_scroll_view_main_text"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:scrollbars="none"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/quote"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/pureWhite"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/pureWhite"
+                android:textStyle="italic"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detailed_quote_scroll_view_main_text"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animated_chest"
+        android:layout_width="200dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_above="@id/chest_message"
+        android:layout_centerHorizontal="true"
+        app:lottie_rawRes="@raw/chestanimation"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animated_play_vid"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_alignTop="@+id/animated_chest"
+        android:layout_alignEnd="@+id/animated_chest"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/playvideoanimation"/>
+
+    <TextView
+        android:id="@+id/chest_message"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:padding="6dp"
+        android:textStyle="bold"
+        android:textColor="@color/pureWhite"
+        android:layout_above="@+id/adView4"
+        android:layout_marginBottom="30dp"
+        android:text="@string/choose_a_chest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/quote_done"
+        android:layout_above="@+id/adView4"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/general_blue_bg"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="doneWithQuotes"
+        android:text="@string/done"
+        android:textColor="@color/nexmii_font_blue"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UnusedAttribute" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="FULL_WIDTHx50"
+        ads:adUnitId="@string/ads_banner_quot_actual">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

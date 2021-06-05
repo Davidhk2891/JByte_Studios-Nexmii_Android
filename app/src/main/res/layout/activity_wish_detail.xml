@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_wish_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_gradient"
+    tools:context="mynyresolutionslist.nexmii.com.mynyresolutionslist.ui.activities.WishDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/big_emoji_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/big_emoji_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="8dp"
+            android:layout_centerInParent="true"/>
+
+        <FrameLayout
+            android:id="@+id/big_emoji_overlay"
+            android:background="@drawable/main_bg_gradient_overlayed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/res_detail_emoji"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+
+    <ImageView
+        android:id="@+id/ach_check_mark"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        android:layout_toEndOf="@+id/res_detail_emoji"
+        android:layout_alignBottom="@+id/res_detail_emoji"
+        android:src="@drawable/logoach"
+        android:layout_marginStart="-30dp"/>
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_below="@+id/res_detail_emoji"
+        android:layout_marginTop="20dp"
+        android:text="@string/title_goes_here"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:background="@drawable/res_detail_title_bg"
+        android:padding="8dp"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/content_date_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textTitle"
+        android:background="@drawable/res_details_content_bg"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/resCompleted"
+        android:padding="4dp">
+
+        <ScrollView
+            android:id="@+id/content_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_above="@+id/record"
+            android:scrollbars="none"
+            android:gravity="start">
+
+            <TextView
+                android:id="@+id/textWish"
+                android:text="@string/the_wish_will"
+                android:padding="4dp"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/record"
+            android:text="@string/the_date"
+            android:padding="6dp"
+            android:textAlignment="center"
+            android:textColor="@color/nexmii_yellow"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/revive_res"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/resCompleted"
+        android:scaleType="fitXY"
+        android:layout_above="@+id/deleteButton"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_marginBottom="-8dp"
+        android:src="@drawable/revivelocked"
+        android:background="#00000000"
+        android:visibility="gone"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp" />
+
+    <Button
+        android:id="@+id/resCompleted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/deleteButton"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_bg_green"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:visibility="visible"
+        android:text="@string/res_details_achieved"
+        android:textColor="@color/nexmii_font_blue"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:background="@drawable/btn_bg_red"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_above="@+id/adView2"
+        android:text="@string/res_details_killed"
+        android:textColor="@color/nexmii_font_blue"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="ContentDescription" />
+
+    <com.facebook.share.widget.ShareButton
+        android:id="@+id/share_linky"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_above="@+id/resCompleted"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <!-- blur effect -->
+    <eightbitlab.com.blurview.BlurView
+        android:id="@+id/blur_view_res_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adView2"
+        android:visibility="gone">
+
+        <!--Any child View here, TabLayout for example-->
+
+    </eightbitlab.com.blurview.BlurView>
+
+    <TextView
+        android:id="@+id/cantReviveMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resCompleted"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="@color/pureWhite"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="FULL_WIDTHx50"
+        ads:adUnitId="@string/ads_banner_dets_actual">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

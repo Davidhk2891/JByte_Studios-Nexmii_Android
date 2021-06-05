@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_gradient"
+    tools:context="mynyresolutionslist.nexmii.com.mynyresolutionslist.ui.activities.WishEditActivity">
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:background="@drawable/res_edit_main_bg"
+        android:layout_marginTop="30dp"
+        android:inputType="textPersonName"
+        android:hint="@string/enterTitle"
+        android:maxLength="35"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/wishEditText"
+        android:hint="@string/writeResolution"
+        android:gravity="start"
+        android:layout_marginTop="30dp"
+        android:imeOptions="actionDone"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:maxLength="320"
+        android:padding="10dp"
+        android:background="@drawable/res_edit_main_bg"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_below="@+id/titleEditText"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        tools:ignore="Autofill,TextFields" />
+
+    <ImageView
+        android:id="@+id/choosen_emoji"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/wishEditText"
+        android:layout_below="@+id/wishEditText"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:id="@+id/choose_emoji_linear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/res_edit_main_bg"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/wishEditText"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:layout_toEndOf="@+id/choosen_emoji"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="25dp">
+
+        <TextView
+            android:id="@+id/choose_emoji_text"
+            android:text="@string/chooseYourEmoji"
+            android:textSize="19sp"
+            android:textColor="@color/pureWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/choose_emoji_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/ic_add_circle_nexmii_yellow_24dp"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/letsDoIt"
+        android:textColor="@color/nexmii_font_blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/adView3"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/btn_bg_yellow" />
+
+    <!-- blur effect -->
+    <eightbitlab.com.blurview.BlurView
+        android:id="@+id/blurView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adView3"
+        android:visibility="gone">
+
+        <!--Any child View here, TabLayout for example-->
+
+    </eightbitlab.com.blurview.BlurView>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="FULL_WIDTHx50"
+        ads:adUnitId="@string/ads_banner_edit_actual">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
